@@ -3,8 +3,7 @@ nums = usr_in.split(",")
 nums = [x for x in nums if x.strip()]
 
 total = 0
-max_no = 0
-min_no = int(nums[0])
+max_no = min_no = int(nums[0])
 count_even = 0
 count_no_avg = 0
 
@@ -31,7 +30,7 @@ average = total/len(nums)
 
 for no in nums:
     no = int(no)
-    if average <= no:
+    if average < no:
         count_no_avg +=1
     
 
